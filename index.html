@@ -1,109 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CV - Valton Kamberaj</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .cv-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #0056b3;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 15px;
-    }
-    .cv-button:hover {
-      background: #003d80;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valton Kamberaj - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f5f6fa;
+            color: #333;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background-color: #1e1e2f;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+        }
+
+        .sidebar h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 40px 60px;
+            overflow-y: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #1e1e2f;
+            border-bottom: 2px solid #1e1e2f;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        section p, section li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        section ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1e1e2f;
+        }
+
+        a {
+            color: #1e1e2f;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media(max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 20px;
+            }
+            .sidebar img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 0;
+            }
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Valton Kamberaj</h1>
-    <p>Lecturer | PhD Candidate in AI & Deep Learning</p>
-  </header>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:valtonikamberaj@gmail.com">valtonikamberaj@gmail.com</a></p>
-    <p>Phone: +383 49 873 702</p>
-    <p>Address: Mitrovica, Kosovo</p>
-  </section>
+    <div class="sidebar">
+        <!-- Mund të vendosësh foto në vend të src="" -->
+        <img src="https://via.placeholder.com/120" alt="Valton Kamberaj">
+        <h1>Valton Kamberaj</h1>
+        <p>Lecturer in Computer Science<br>PhD in AI & Deep Learning</p>
+        <ul>
+            <li><a href="mailto:valton.kamberaj@example.com">Email</a></li>
+            <li><a href="https://github.com/valtonk" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/valtonk" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
 
-  <section class="section">
-    <h2>Work Experience</h2>
-    <ul>
-      <li>Computer Science Lecturer – University AAB (AI, Big Data, Programming) (2023 – Present)</li>
-      <li>Computer Science Lecturer – British College of Science (2024 – Present)</li>
-      <li>University Lecturer – IBC-M Mitrovica (2024)</li>
-      <li>Computer Science Lecturer – Heimerer College (2024)</li>
-      <li>IT Project Manager – NGO Mitrovica (2017 – 2020)</li>
-      <li>Web Developer – Front & Back End (2018 – Present)</li>
-      <li>Teacher of IT – Public Primary Schools, Mitrovica (2020 – 2021)</li>
-    </ul>
-  </section>
+    <div class="main-content">
+        <section>
+            <h2>About Me</h2>
+            <p>I am a Lecturer in Computer Science with a PhD specializing in Artificial Intelligence and Deep Learning. My academic and research journey focuses on the intersection between AI and music, where I develop computational models that enhance creativity and transform the way technology interacts with art.</p>
+        </section>
 
-  <section class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>PhD (Candidate) in Computer Science – South East European University (2021 – Present)</li>
-      <li>Master of Science in Engineering Informatics – University of Mitrovica (2016 – 2020)</li>
-      <li>Bachelor of Engineering Informatics – University of Mitrovica (2013 – 2016)</li>
-    </ul>
-  </section>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Lecturer at AAB College</strong> - Teaching AI, Big Data, and Programming courses.</li>
+                <li><strong>Lecturer at SEEU University</strong> - PhD student and researcher in AI and deep learning.</li>
+                <li><strong>Secondary Teaching</strong> - Teaching part-time (20€/hour, 6 hours/week).</li>
+            </ul>
+        </section>
 
-  <section class="section">
-    <h2>Skills</h2>
-    <p>Web Programming | Mobile Development | Python | Java | Artificial Intelligence | Machine Learning | Big Data | SQL | University Teaching | Scientific Publishing</p>
-  </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>PhD</strong> - SEEU University, AI & Deep Learning</li>
+                <li><strong>Master's & Bachelor's</strong> - University of Mitrovica, Computer Science</li>
+            </ul>
+        </section>
 
-  <section class="section">
-    <h2>Full CV</h2>
-    <p>
-      <a class="cv-button" href="Valton-CV.pdf" target="_blank">📄 Download CV (PDF)</a>
-    </p>
-  </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Artificial Intelligence & Deep Learning</li>
+                <li>Python, Java, Big Data Tools</li>
+                <li>Music composition with computational models</li>
+                <li>Teaching & Academic Research</li>
+            </ul>
+        </section>
+    </div>
 
-  <footer>
-    <p>Linked with <a href="https://aab-edu.net" target="_blank">AAB College</a></p>
-  </footer>
 </body>
 </html>
